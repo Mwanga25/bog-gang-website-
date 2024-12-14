@@ -191,7 +191,52 @@ iframe {
       width: 300px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+/* About Us Section */
+.section {
+  padding: 2rem;
+  text-align: center;
+}
 
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    .about-content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
     /* Gallery Section */
     .gallery {
       display: grid;
@@ -310,6 +355,25 @@ iframe {
       
     </div>
   </section>
+  <section id="about-us" class="section">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        Welcome to <strong>B.O.G GANG</strong> – your trusted partner in precision bending and rolling solutions. With years of expertise in the industry, we specialize in delivering high-quality bending machines, rolling machines, and custom industrial services tailored to meet the unique needs of our clients.
+      </p>
+      <p>
+        Our mission is to empower businesses with reliable, innovative equipment and unmatched customer service. We pride ourselves on quality, precision, and a commitment to excellence in every project we undertake.
+      </p>
+      <p>
+        Whether you're in construction, manufacturing, or custom industrial work, <strong>B.O.G GANG</strong> is here to help you achieve your goals with precision and efficiency.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="about-us.jpg" alt="About Us">
+    </div>
+  </div>
+</section>
   <section id="services" class="section">
     <h2>Our Services</h2>
     <div class="services">
@@ -392,6 +456,16 @@ iframe {
         behavior: "smooth",
       });
     });
+  </script>
+  <script>
+  const aboutSection = document.querySelector('#about-us .about-content');
+  window.addEventListener('scroll', () => {
+    const sectionPos = aboutSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (sectionPos < windowHeight - 50) {
+      aboutSection.classList.add('visible');
+    }
+  });
   </script>
 </body>
 </html>
