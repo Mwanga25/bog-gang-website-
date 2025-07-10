@@ -4,31 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>B.O.G GANG | Bending & Rolling Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="hero">
-    <nav class="navbar">
+  <header class="main-header">
+    <div class="navbar">
       <img src="logo.png" alt="B.O.G GANG Logo" class="logo"/>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </div>
     <div class="hero-content">
       <h1>We bend, weld and shape metal to your design</h1>
       <a href="#contact" class="btn">Contact Us</a>
     </div>
   </header>
 
-  <!-- Hero Video Section -->
-  <section id="hero" class="hero-video-section">
+  <section class="hero-video-section">
     <video autoplay muted loop class="hero-video">
       <source src="hero-video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -39,140 +37,80 @@
     </div>
   </section>
 
-  <!-- About Us -->
-  <section id="about-us" class="section" data-aos="fade-up">
+  <section id="about-us" class="section about-section" data-aos="fade-up">
     <h2>About Us</h2>
     <div class="about-content">
       <div class="about-text">
-        <p><strong>B.O.G GANG</strong> – your trusted partner in precision bending and rolling solutions.</p>
-        <p>We specialize in high-quality machines and services tailored to construction, manufacturing, and custom industrial needs.</p>
+        <p>Welcome to <strong>B.O.G GANG</strong> – your trusted partner in precision bending and rolling solutions.</p>
         <p>Our mission is to empower businesses with reliable, innovative equipment and unmatched customer service.</p>
+        <p>Whether you're in construction, manufacturing, or custom industrial work, we're here to help.</p>
       </div>
       <div class="about-image">
-        <img src="about-us.jpg" alt="About Us" />
+        <img src="about-us.jpg" alt="About Us"/>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="section" data-aos="fade-up">
+  <section id="services" class="section services-section" data-aos="fade-up">
     <h2>Our Services</h2>
     <div class="service-cards">
-      <div class="card">
-        <div class="icon">🧱</div>
-        <h3>Gate Fabrication</h3>
-        <p>Strong, custom-designed metal gates for homes & businesses.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🚗</div>
-        <h3>Car Body Works</h3>
-        <p>Welding & body work for heavy trucks, buses, and more.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🛠️</div>
-        <h3>Metal Plate Bending</h3>
-        <p>Precision bending of metal plates to match your project.</p>
-      </div>
-      <div class="card">
-        <div class="icon">✂️</div>
-        <h3>Metal Cutting</h3>
-        <p>Custom sheet cutting to follow any client design.</p>
-      </div>
-    </div>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Bending Machines</h3>
-        <p>Precision and durability for construction and manufacturing industries.</p>
-      </div>
-      <div class="card">
-        <h3>Rolling Machines</h3>
-        <p>Efficient and versatile machines for handling diverse materials.</p>
-      </div>
-      <div class="card">
-        <h3>Custom Industrial Work</h3>
-        <p>Tailored industrial solutions for all your project needs.</p>
-      </div>
+      <div class="card"><div class="icon">🧱</div><h3>Gate Fabrication</h3><p>Custom metal gates for homes & businesses.</p></div>
+      <div class="card"><div class="icon">🚗</div><h3>Car Body Works</h3><p>Welding & body work for heavy trucks, buses, and more.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Metal Plate Bending</h3><p>Precision bending of metal plates.</p></div>
+      <div class="card"><div class="icon">✂️</div><h3>Metal Cutting</h3><p>Custom sheet cutting based on client designs.</p></div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="section" data-aos="zoom-in">
+  <section id="gallery" class="section gallery-section" data-aos="zoom-in">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="https://source.unsplash.com/400x300/?welding" alt="Welding" />
-      <img src="https://source.unsplash.com/400x300/?metalwork" alt="Metalwork" />
-      <img src="https://source.unsplash.com/400x300/?fabrication" alt="Fabrication" />
-      <img src="https://source.unsplash.com/400x300/?workshop" alt="Workshop" />
-      <img src="bending-machine.jpg" alt="Bending Machine" />
-      <img src="rolling-machine.jpg" alt="Rolling Machine" />
-      <img src="workshop.jpg" alt="Workshop Setup" />
-      <img src="finished-product.jpg" alt="Finished Product" />
-      <img src="custom-work.jpg" alt="Custom Work" />
+      <img src="https://source.unsplash.com/400x300/?welding" alt="Welding"/>
+      <img src="https://source.unsplash.com/400x300/?metalwork" alt="Metalwork"/>
+      <img src="https://source.unsplash.com/400x300/?fabrication" alt="Fabrication"/>
+      <img src="https://source.unsplash.com/400x300/?workshop" alt="Workshop"/>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section" data-aos="fade-up">
+  <section id="contact" class="section contact-section" data-aos="fade-up">
     <h2>Contact Us</h2>
-    <p>Have any questions? We'd love to hear from you.</p>
     <p>Email: <a href="mailto:boggang27@gmail.com">boggang27@gmail.com</a></p>
     <p>Phone: +255 745 783 637</p>
   </section>
 
-  <!-- Social Media -->
   <section id="social-media" class="section">
     <h2>Follow Us</h2>
     <div class="social-links">
-      <a href="https://www.tiktok.com/@captain.solo55?_t=8sCo8mNekfl&_r=1" target="_blank" aria-label="TikTok">
-        <img src="tiktok-icon.png" alt="TikTok" />
-      </a>
-      <a href="https://www.facebook.com/share/1Agy52n6va/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
-        <img src="facebook-icon.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/official_jswai/profilecard/?igsh=MW52bXM4ZmhoNXdyZw==" target="_blank" aria-label="Instagram">
-        <img src="Instagram-icon.png" alt="Instagram" />
-      </a>
+      <a href="https://www.tiktok.com/@captain.solo55" target="_blank"><img src="tiktok-icon.png" alt="TikTok"/></a>
+      <a href="https://www.facebook.com/share/1Agy52n6va/" target="_blank"><img src="facebook-icon.png" alt="Facebook"/></a>
+      <a href="https://www.instagram.com/official_jswai" target="_blank"><img src="Instagram-icon.png" alt="Instagram"/></a>
     </div>
   </section>
 
-  <!-- Back to Top -->
   <div id="back-to-top" class="back-to-top">↑ Top</div>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 B.O.G GANG. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Back to Top Button
-    const backToTopButton = document.getElementById("back-to-top");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        backToTopButton.classList.add("visible");
-      } else {
-        backToTopButton.classList.remove("visible");
-      }
+    AOS.init();
+
+    // Hamburger toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
     });
-    backToTopButton.addEventListener("click", () => {
+
+    // Back-to-top
+    const backToTop = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("visible", window.scrollY > 300);
+    });
+    backToTop.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
-
-  <script>
-    // About Us Fade-in
-    const aboutSection = document.querySelector("#about-us .about-content");
-    window.addEventListener("scroll", () => {
-      const sectionPos = aboutSection.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      if (sectionPos < windowHeight - 50) {
-        aboutSection.classList.add("visible");
-      }
-    });
-  </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
 </body>
 </html>
